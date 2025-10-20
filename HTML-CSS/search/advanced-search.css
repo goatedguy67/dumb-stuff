@@ -1,0 +1,40 @@
+:root {
+  --clr-accent-1-400: #dd4a38;
+
+  --clr-accent-2-400: #4c8efd;
+  --clr-accent-2-500: #3078ec;
+  --clr-accent-2-700: #1459d6;
+  --clr-accent-2-900: #0000ee;
+
+  --fs-900: 1.25em;
+  --fs-600: 1.0625em;
+  --fs-500: 1em;
+  --fs-300: 0.875em;
+  --fs-200: 0.8125em;
+  --fs-100: 0.75em;
+  --fs-50: 0.6875em;
+
+  --m-pad: 1.5em;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+/* utility classes */
+
+.flow-content > * + * {
+  margin-top: var(--flow-space, var(--spacer));
+}
+
+.flow-content--large {
+  --flow-space: 3rem;
+}

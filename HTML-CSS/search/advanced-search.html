@@ -3,7 +3,192 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="advanced-search.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header></header>
+
+    <section class="sub-header container break">
+      <h1 class="title">Búsqueda avanzada</h1>
+    </section>
+
+    <form action="">
+      <section class="table">
+        <div class="container flow-content">
+          <div class="table-column">
+            <h2 class="title">Mostrar páginas que contengan...</h2>
+            <input type="hidden" />
+            <p class="legend">
+              <b>Para hacer esto en el cuadro de búsqueda</b>
+            </p>
+          </div>
+          <div class="table-column">
+            <p class="description">todas estas palabras:</p>
+            <input type="text" />
+            <p class="legend">
+              <b>Ingresa las palabras importantes</b>: Terrier ratonero
+              tricolor.
+            </p>
+          </div>
+          <div class="table-column">
+            <p class="description">esta palabra o frase exactas:</p>
+            <input type="text" />
+            <p class="legend">
+              <b>Ingresa las palabras exactas entre commillas</b>: "Terrier
+              ratonero".
+            </p>
+          </div>
+          <div class="table-column">
+            <p class="description">cualquiera de estas palabras:</p>
+            <input type="text" />
+            <p class="legend">
+              <b>Ingresa OR entre las palabras que desees</b>: En miniatura OR
+              estándar.
+            </p>
+          </div>
+          <div class="table-column">
+            <p class="description">ninguna de estas palabras:</p>
+            <input type="text" />
+            <p class="legend">
+              <b
+                >Ingresa un signo menos justo delante de las palabras que no
+                deseas que aparezcan</b
+              >: -Roedor, -"Jack Russell".
+            </p>
+          </div>
+          <div class="table-column break">
+            <p class="description">números del:</p>
+            <div class="table-row">
+              <input type="text" />
+              <p class="description">al</p>
+              <input type="text" />
+            </div>
+
+            <p class="legend">
+              <b
+                >Ingresa dos puntos entre los números y agrega una unidad de
+                medida</b
+              >: 10..35 1b, $300..$500, 2010..2011.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="table">
+        <div class="container flow-content">
+          <div class="table-column">
+            <h2 class="title">Luego restringe tus resultados por...</h2>
+            <input type="hidden" />
+            <p class="legend"><b></b></p>
+          </div>
+          <div class="table-column">
+            <p class="description">idioma:</p>
+            <input type="text" />
+            <p class="legend">
+              <b>Busca páginas en el idioma que seleccionas.</b>
+            </p>
+          </div>
+          <div class="table-column">
+            <p class="description">región:</p>
+            <input type="text" />
+            <p class="legend">
+              <b>Busca páginas publicadas en una región determinada.</b>p>
+            </p>
+          </div>
+          <div class="table-column">
+            <p class="description">última actualización:</p>
+            <input type="text" />
+            <p class="legend">
+              <b
+                >Busca páginas actualziadas en el transcurso del período que
+                especificas.</b
+              >
+            </p>
+          </div>
+          <div class="table-column">
+            <p class="description">sitio o dominio:</p>
+            <input type="text" />
+            <p class="legend">
+              <b
+                >Realiza búsquedas en un sitio (como wikipedia.org ) o restringe
+                los resultados a un dominio como .edu .org o .gov.</b
+              >
+            </p>
+          </div>
+          <div class="table-column">
+            <p class="description">términos que aparecen:</p>
+            <input type="text" />
+
+            <p class="legend">
+              <b
+                >Busca términos en toda la página, en su titulo o en su
+                dirección web, o vínculos que te dirijan a la página que estás
+                buscando.</b
+              >
+            </p>
+          </div>
+
+          <div class="table-column">
+            <p class="description">tipo de archivo:</p>
+            <input type="text" />
+
+            <p class="legend">
+              <b>Busca páginas del forfmato que prefieras.</b>
+            </p>
+          </div>
+
+          <div class="table-column break">
+            <p class="description">
+              <a
+                href="https://support.google.com/websearch?p=ws_images_usagerights"
+                >derechos de uso</a
+              >:
+            </p>
+            <input type="text" />
+
+            <p class="legend">
+              <b>Busca páginas que puedas usar libremente.</b>
+            </p>
+          </div>
+        </div>
+      </section>
+    </form>
+
+    <div class="container">
+      <h2 class="title">También puedes...</h2>
+      <ul class="text-blue">
+        <li>
+          <a href="https://support.google.com/websearch?p=adv_pages_similar"
+            >Buscar páginas similares a una URL</a
+          >
+        </li>
+        <li>
+          <a href="https://support.google.com/websearch?p=adv_pages_visited"
+            >Buscar las páginas visitadas</a
+          >
+        </li>
+        <li>
+          <a href="https://support.google.com/websearch?p=adv_operators"
+            >Usar los operadores del cuadro de búsqueda</a
+          >
+        </li>
+        <li>
+          <a href="https://www.google.com.mx/preferences"
+            >Personalizar la configuración de búsqueda</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <div class="sub-header">
+        <span>México</span>
+      </div>
+    </footer>
+  </body>
 </html>

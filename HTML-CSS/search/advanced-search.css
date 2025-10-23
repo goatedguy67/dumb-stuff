@@ -1,4 +1,6 @@
 :root {
+  --default-spacer: 1rem;
+
   --clr-accent-1-400: #dd4a38;
 
   --clr-accent-2-400: #4c8efd;
@@ -6,15 +8,20 @@
   --clr-accent-2-700: #1459d6;
   --clr-accent-2-900: #0000ee;
 
-  --fs-900: 1.25em;
-  --fs-600: 1.0625em;
-  --fs-500: 1em;
-  --fs-300: 0.875em;
-  --fs-200: 0.8125em;
-  --fs-100: 0.75em;
-  --fs-50: 0.6875em;
+  --bg-accent-500: #eeefef;
 
-  --m-pad: 1.5em;
+  --fs-900: 1.25rem;
+  --fs-600: 1.0625rem;
+  --fs-500: 1rem;
+  --fs-300: 0.875rem;
+  --fs-200: 0.8125rem;
+  --fs-100: 0.75rem;
+  --fs-50: 0.6875rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --m-pad: 1.5rem;
 }
 
 /* Reset */
@@ -29,12 +36,109 @@ body {
   margin: 0;
 }
 
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  min-width: 0;
+}
+
 /* utility classes */
 
+.text-blue {
+  color: var(--clr-accent-2-900);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flex-row {
+  flex-direction: row;
+  flex-shrink: 1;
+}
+
 .flow-content > * + * {
-  margin-top: var(--flow-space, var(--spacer));
+  margin-top: var(--space, var(--default-spacer));
 }
 
 .flow-content--large {
   --flow-space: 3rem;
+}
+
+.break {
+  border-bottom: 1px solid #cdcdcc;
+  padding-bottom: var(--default-spacer);
+  margin-bottom: calc(var(--default-spacer) / 3);
+}
+
+.legend {
+  display: none;
+}
+
+/* general styling */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: var(--clr-accent-1-400);
+}
+
+.container {
+  padding: 1px 1rem;
+}
+
+.table {
+  max-width: 71.25rem;
+}
+
+.title {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-400);
+
+  margin: 0.5rem 0;
+}
+
+.table-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+/* section styling */
+
+.sub-header {
+  background-color: var(--bg-accent-500);
+}
+
+.table .title {
+  margin: 0;
+  font-size: var(--fs-600);
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  flex-shrink: 1;
 }
